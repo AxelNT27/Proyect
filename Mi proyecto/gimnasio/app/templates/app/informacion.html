@@ -1,0 +1,81 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Información del Gimnasio - Wolvergym{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center my-4">Información del Gimnasio</h1>
+    
+    
+    <section class="mb-5">
+        <h2>Historia de Wolvergym</h2>
+        <p>Wolvergym comenzó como un pequeño gimnasio en 2010 con la misión de ayudar a las personas a alcanzar sus objetivos de fitness. Hoy en día, somos un gimnasio reconocido con equipos de última generación y un equipo de profesionales altamente capacitados. Nuestro objetivo es brindar un espacio cómodo y motivador para todos nuestros miembros.</p>
+    </section>
+
+    
+    <section class="mb-5">
+        <h2>Conoce al Personal</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'app/imagenes/entrenador1.jpeg' %}" class="card-img-top" alt="Entrenador 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ignacio Chamorro</h5>
+                        <p class="card-text">Preparador físico, instructor de zumba, strong nation, zumba kids.</p>
+                        <p><strong>Redes Sociales:</strong></p>
+                        <a href="https://www.instagram.com/ignacio.cl.pf/profilecard/?igsh=MWl6amZubXgxaDQ1NQ==" class="btn btn-danger" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="Entrenador 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mehiby Soto</h5>
+                        <p class="card-text">Nutricionista, especializada en dietas deportivas.</p>
+                        <p><strong>Redes Sociales:</strong></p>
+                        <a href="https://www.instagram.com/mehiby95/profilecard/" class="btn btn-danger" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="mb-5">
+        <h2>Ubicación</h2>
+        <p>Nos encontramos en la siguiente dirección:</p>
+        <address>
+            Villa vaticano #1139, Ciudad, Curicó.<br>
+            Teléfono: +56 9 7376 8161<br>
+            Instagram: Wolvergym
+        </address>
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1933.524982970154!2d-71.2532727199273!3d-34.988195761472824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9664571072ae5097%3A0x1d388553ac7ff3e4!2sVaticano%201139%2C%203344106%20Curic%C3%B3%2C%20Maule!5e0!3m2!1ses-419!2scl!4v1732153313543!5m2!1ses-419!2scl" 
+            width="600" 
+            height="450" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2>Síguenos en Nuestras Redes Sociales</h2>
+        <ul class="list-unstyled d-flex justify-content-center">
+            <div class="social-media">
+                <a href="https://www.instagram.com/wolvergym22/profilecard/?igsh=MXNkYTIwd3Q5d3A3dQ==" target="_blank">
+                    <img src="{% static 'app/imagenes/instagram.png' %}" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/wolvergym2022?mibextid=ZbWKwL" target="_blank">
+                    <img src="{% static 'app/imagenes/facebook.png' %}" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.tiktok.com/@ignaciopf1?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <img src="{% static 'app/imagenes/tiktok.png' %}" alt="Tiktok" class="social-icon">
+                </a>
+            </div>    
+        </ul>
+    </section>
+</div>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}

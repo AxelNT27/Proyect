@@ -1,0 +1,25 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a Wolvergym</h1>
+    <p class="lead">Aquí encontraras informacion sobre cual es nuestra mision y nuestra visión.</p>
+    <a href="/planes/" class="btn btn-danger btn-lg">Ver Planes</a>
+</div>
+<section class="mission-vision">
+    <div class="container">
+        <h2 class="section-title">Misión</h2>
+        <p class="mission-vision-content">
+            Ser un gimnasio líder en el desarrollo de la fuerza física, mental y espiritual, ofreciendo un entorno seguro, motivador y equipado con la implementación adecuada, para que cada miembro alcance su máximo potencial y supere sus límites personales.
+        </p>
+
+        <h2 class="section-title">Visión</h2>
+        <p class="mission-vision-content">
+            Convertirnos en una referencia regional en el entrenamiento de fuerza, promoviendo una comunidad comprometida con un estilo de vida saludable, resiliente y lleno de energía, donde cada individuo encuentre inspiración y herramientas para transformar su cuerpo, mente y espíritu.
+        </p>
+    </div>
+</section>
+{% endblock %}
+

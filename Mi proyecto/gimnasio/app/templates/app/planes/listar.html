@@ -1,0 +1,34 @@
+{% extends 'app/base.html'%}
+
+{% block content %}
+<br>
+<br>
+<br>
+<div class='card'>
+    <div class='card-body'>
+        <h2>Listado de Planes</h2>
+        <table class='table table-striped table-hover table-responsive-sm'>
+            <tr>
+
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+
+            </tr>
+            {% for p in planes%}
+            <tr>
+                <td>{{p.nombre | title}}</td>
+                <td>{{p.descripcion}}</td>
+                <td>{{p.precio}}</td>
+                <td>
+                    <a href="{% url 'modificar_plan' p.id %}" class='btn btn-primary'>Modificar</a>
+                    <a href="{% url 'eliminar_plan' p.id %}" class='btn btn-danger'>Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+{% endblock %}
